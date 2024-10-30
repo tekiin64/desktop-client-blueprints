@@ -12,11 +12,11 @@ class subinfo(info.infoclass):
             self.options.dynamic.registerOption("forceOverrideServerUrl", False)
 
     def setTargets(self):
-        self.svnTargets["master"] = "[git]https://github.com/nextcloud/desktop"
+        self.svnTargets["master"] = "[git]https://github.com/tekiin64/drive"
 
-        self.description = "Nextcloud Desktop Client"
-        self.displayName = "Nextcloud"
-        self.webpage = "https://nextcloud.com"
+        self.description = "Devups Drive Desktop Client"
+        self.displayName = "Devups Drive"
+        self.webpage = "https://drive.devups.com.tr"
 
         self.defaultTarget = "master"
 
@@ -66,9 +66,9 @@ class Package(CMakePackageBase):
 
     def createPackage(self):
         self.blacklist_file.append(os.path.join(self.packageDir(), 'blacklist.txt'))
-        self.defines["appname"] = "nextcloud"
-        self.defines["company"] = "Nextcloud GmbH"
-        self.applicationExecutable = "nextcloud"
+        self.defines["appname"] = "devups drive"
+        self.defines["company"] = "DEVUPS"
+        self.applicationExecutable = "devupsdrive"
 
         self.ignoredPackages += ["binary/mysql"]
         if not CraftCore.compiler.isLinux:
