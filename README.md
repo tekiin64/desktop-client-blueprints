@@ -58,7 +58,7 @@ C:\CraftRoot\craft\craftenv.ps1
 ```
 4. Add the blueprints from this repository:
 ```
-craft --add-blueprint-repository https://github.com/nextcloud/desktop-client-blueprints.git
+craft --add-blueprint-repository https://github.com/tekiin64/desktop-client-blueprints.git
 ```
 5.
 ```
